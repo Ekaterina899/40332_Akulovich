@@ -1,0 +1,8 @@
+﻿@using Miachyna.Domain.Models
+@model Cart
+
+<a asp-action="Index" asp-controller="Cart" class="navbar-text ms-auto">
+    @Model.TotalPrice €
+    <i class="fa-solid fa-cart-shopping"></i>
+    (@Model.Count)
+</a>
